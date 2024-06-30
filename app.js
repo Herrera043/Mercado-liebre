@@ -3,7 +3,7 @@ const app = express();
 app.use(express.static('public'));
 
 //Levantar nuestro servidor
-constport = process.env.PORT || 3001;
+const port = process.env.PORT || 3001;
 app.listen(port, ()=>console.log('servidor corriendo en el puerto ${port}'));
 
 app.get('/', (req,res)=>{
